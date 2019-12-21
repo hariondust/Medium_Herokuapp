@@ -22,6 +22,9 @@ app.use(function(req, res, next) {
 });
 
 // *****number 5 and 8 belom di implementasiin*****
+app.get("/", (req, res) => {
+    res.send("Test");
+})
 
 app.group("/api/v1", (router) =>{
   // routing for SHOW all category - number 1
